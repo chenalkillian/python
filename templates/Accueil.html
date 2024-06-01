@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Belle Page d'Accueil</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://jcmarot.files.wordpress.com/2018/12/matrix-code-animation-gif-free-animated-background-716.gif?w=660");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            text-align: center;
+            padding: 1em;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pynylyse</h1>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5000/lien/ajouter">Ajouter lien </a>
+        <a href="http://127.0.0.1:5000/url/liste">Liste</a>
+        <a href="http://127.0.0.1:5000/adduser">Ajouter User</a>
+        <a href="http://127.0.0.1:5000/">Logout</a>
+    </nav>
+
+    <main>
+        <h1>Bienvenue sur votre site d'analyse  !</h1>
+    </main>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Workout Table</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p, table {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-size:cover;
+            background-repeat:no-repeat;
+            text-align:center;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+
+        }
+
+        th {
+            background-color: black;
+                    color:white;
+
+        }
+        tr{
+        background-color:#778899		;
+;
+        color:black;
+        font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="http://127.0.0.1:5000/lien/ajouter">Ajouter lien</a>
+        <a href="http://127.0.0.1:5000/url/liste">Liste</a>
+        <a href="http://127.0.0.1:5000/adduser">Ajouter User</a>
+        <a href="http://127.0.0.1:5000/">Logout</a>
+    </nav>
+
+    <!-- Table Content -->
+    <h1>Best Workout Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom du Site</th>
+                <th>URL du Site</th>
+                <th>Nom Utilisateur</th>
+                <th>Count Elyes</th>
+                <th>Count Karim</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for list in Liste %}
+                <tr>
+                    <td>{{ list.id }}</td>
+                    <td>{{ list.nom_site }}</td>
+                    <td>{{ list.url }}</td>
+                    <td>{{ list.nom_user }}</td>
+                    <td>{{ list.count_elyes }}</td>
+                    <td>{{ list.count_karim }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
